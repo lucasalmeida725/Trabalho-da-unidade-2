@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisar Academia</title>
+    <link rel="stylesheet" href="tela_inical.css"> 
+    <style>
+        body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.search-bar {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaçamento entre itens */
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 10px 40px 10px 10px; /* Espaço para a lupa */
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.icon-gear {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.search-icon img {
+    width: 20px;
+    height: 20px;
+}
+
+p {
+    color: #b3b3b3;
+    font-size: 14px;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.map img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+h2 {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.gym-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gym {
+    width: 48%;
+}
+
+.gym img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.gym p {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.distance {
+    color: #b3b3b3;
+    font-size: 14px;
+}
+
+.badge {
+    position: absolute;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+
+.high-rated {
+    top: 5px;
+    left: 5px;
+}
+
+.new {
+    top: 5px;
+    right: 5px;
+}
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Barra de Pesquisa -->
+    
+    <div class="search-bar">
+        <a href="configuracao.html">
+            <img src="engrenagem.jpeg" alt="Configurações" class="icon-gear">
+        </a>
+
+        <input type="text" placeholder="Pesquise sua Academia">
+        <a href="iron.html">
+            <span class="search-icon">
+                <img src="images.png" alt="Lupa" class="icon-lupa">
+            </span>
+        </a>
+    </div>
+    <p>Encontre a academia perfeita para sua jornada fitness</p>
+
+    <!-- Botão de Proximidades -->
+    <a href="#" class="button">Pesquisar nas proximidades</a>
+
+    <!-- Mapa Simulado -->
+    <div class="map">
+        <img src="Opera Instantâneo_2024-10-23_123227_www.figma.com.png" alt="Mapa">
+    </div>
+
+    <!-- Academias Relevantes -->
+    <h2>Academias relevantes</h2>
+
+    <div class="gym-list">
+        <div class="gym">
+            <span class="badge high-rated">Alta classificação</span>
+            <img src="Opera Instantâneo_2024-10-23_123054_www.figma.com.png" alt="Fitness Hub">
+            <p>Fitness Hub</p>
+            <span class="distance">5km</span>
+        </div>
+
+        <div class="gym">
+            <span class="badge new">Novo</span>
+            <img src="Opera Instantâneo_2024-10-23_123009_www.figma.com.png" alt="Fit Zone">
+            <a href="fitzone.html"><p>Fit Zone</p></a>
+            <span class="distance">3km</span>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+

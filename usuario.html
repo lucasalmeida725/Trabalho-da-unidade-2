@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuário</title>
+    <link rel="stylesheet" href="usuario.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.back-button {
+    position: absolute;
+    left: 0;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 18px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.status-bar {
+    position: absolute;
+    right: 0;
+    font-size: 12px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.register-form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    background-color: #333;
+    border: 1px solid #555;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 14px;
+}
+
+small {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 12px;
+    color: #bbb;
+}
+
+button, .save-btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+button:hover, .save-btn:hover {
+    background-color: #CC0000;
+}
+
+/* Ajustes responsivos para telas menores */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    .back-button {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 16px;
+    }
+
+    button, .save-btn {
+        font-size: 14px;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        padding: 10px;
+    }
+
+    .status-bar {
+        font-size: 10px;
+    }
+
+    h1 {
+        font-size: 14px;
+    }
+
+    label {
+        font-size: 12px;
+    }
+
+    input {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    button, .save-btn {
+        font-size: 12px;
+        padding: 10px;
+    }
+}
+button, .save-btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 20px; /* Aumenta o espaçamento acima do botão */
+}
+
+button:hover, .save-btn:hover {
+    background-color: #CC0000;
+}
+input {
+    margin-bottom: 15px; /* Espaçamento abaixo dos campos de entrada */
+}
+
+label {
+    margin-bottom: 10px; /* Espaçamento abaixo dos rótulos */
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="cadastro_usuario.html" class="back-button">&larr;</a> 
+            <h1>Cadastro de Usuário</h1>
+            <div class="status-bar">
+                <span class="time"></span>
+                <span class="icons"> </span>
+            </div>
+        </div>
+
+        <form class="register-form">
+            <label for="cpf">CPF</label>
+            <input type="text" id="cpf" placeholder="Digite seu CPF">
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" placeholder="Digite seu e-mail">
+
+            <label for="endereco">Endereço</label>
+            <input type="text" id="endereco" placeholder="Digite seu endereço">
+
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" placeholder="Digite sua senha">
+            <small>Mínimo de 8 caracteres</small>
+
+            <label for="confirmar-senha">Confirmar Senha</label>
+            <input type="password" id="confirmar-senha" placeholder="Digite novamente sua senha">
+
+            <a href="cadastro_usuario.html" class="save-btn">Salvar</a>
+
+        </form>
+    </div>
+</body>
+</html>
+

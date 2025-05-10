@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurações do Aplicativo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #fff;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            padding: 16px;
+            background-color: #1e1e1e;
+        }
+        .header a {
+            position: absolute;
+            left: 16px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+        }
+        .header h1 {
+            font-size: 18px;
+            margin: 0;
+        }
+        .container {
+            padding: 16px;
+        }
+        .support {
+            display: flex;
+            align-items: center;
+            margin: 16px 0;
+        }
+        .support img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 12px;
+        }
+        .support span {
+            font-size: 14px;
+        }
+        .topics, .updates {
+            margin-bottom: 24px;
+        }
+        .topics h2, .updates h2 {
+            font-size: 16px;
+            margin: 16px 0;
+        }
+        .topics a, .updates div {
+            display: flex;
+            align-items: center;
+            margin: 8px 0;
+            padding: 12px;
+            background-color: #2a2a2a;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #fff;
+        }
+        .topics a span, .updates div span {
+            margin-left: 8px;
+            font-size: 14px;
+        }
+        .updates .card {
+            flex: 1;
+            padding: 16px;
+            margin: 8px;
+            background-color: #333;
+            border-radius: 8px;
+        }
+        .card h3 {
+            font-size: 14px;
+            margin: 0;
+        }
+        .card p {
+            font-size: 12px;
+            color: #aaa;
+        }
+        /* Responsividade */
+        @media (max-width: 600px) {
+            .topics a, .updates .card {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="configuracao.html">&larr;</a>
+        <h1>Configurações do Aplicativo</h1>
+    </header>
+    <div class="container">
+        <div class="support">
+            <img src="14256639c40b10c61f99c8e38eb343dd.png" alt="Equipe de Suporte">
+            <span>Equipe de Suporte</span>
+        </div>
+        <section class="topics">
+            <h2>Tópicos de Ajuda</h2>
+            <a href="#">
+                <span>❓</span> <span>Perguntas Frequentes</span>
+            </a>
+            <a href="#">
+                <span>📞</span> <span>Contato</span>
+            </a>
+            <a href="#">
+                <span>💬</span> <span>Chat ao Vivo</span>
+            </a>
+        </section>
+        <section class="updates">
+            <h2>Últimas Atualizações</h2>
+            <div class="card">
+                <h3>Nova funcionalidade lançada!</h3>
+                <p>Agora você pode personalizar suas configurações...</p>
+                <p><small>Atualização • AppTeam</small></p>
+            </div>
+            <div class="card">
+                <h3>Problema resolvido!</h3>
+                <p>O suporte resolveu meu problema rapidamente. M...</p>
+               
+
+

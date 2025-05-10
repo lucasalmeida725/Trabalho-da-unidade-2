@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academias Próximas</title>
+    <link rel="stylesheet" href="iro.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #fff;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 30px;
+}
+
+.back-arrow {
+    text-decoration: none;
+    color: #fff;
+    font-size: 28px;
+    margin-right: 20px;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+.academia-info {
+    margin-top: 30px;
+}
+
+.academia {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    width: 100%;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+}
+
+.academia img.logo {
+    width: 100px;
+    margin-right: 20px;
+}
+
+.academia-details {
+    flex: 1;
+}
+
+.academia-details h2 {
+    font-size: 28px;
+}
+
+.academia-details p {
+    font-size: 18px;
+    color: #bbb;
+}
+
+.horarios h3,
+.profissionais h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.horarios ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.horarios ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.horarios ul li img {
+    width: 24px;
+    margin-right: 15px;
+}
+
+.profissionais {
+    margin-top: 30px;
+}
+
+.profissional {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profissional img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+/* Media Queries para Tamanhos de PC */
+@media (min-width: 1200px) {
+    body {
+        padding: 60px;
+    }
+
+    .academia img.logo {
+        width: 120px;
+    }
+
+    .academia-details h2 {
+        font-size: 32px;
+    }
+
+    .academia-details p {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .horarios h3, .profissionais h3 {
+        font-size: 26px;
+    }
+
+    .horarios ul li {
+        font-size: 20px;
+    }
+
+    .horarios ul li img {
+        width: 30px;
+    }
+
+    .profissional img {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+
+   
+    <header>
+        <a href="tela_inical.html" class="back-arrow">←</a>
+        <h1>Academias Próximas</h1>
+    </header>
+
+    <section class="academia-info">
+        
+        <div class="academia">
+            <img src="Opera Instantâneo_2024-10-24_165135_www.figma.com.png" alt="Logo Academia" class="logo">
+            <div class="academia-details">
+                <h2>Academia IronFit</h2>
+                <p>Distância: 0.5 km</p>
+            </div>
+        </div>
+
+        
+        <div class="horarios">
+            <h3>Horários das Aulas</h3>
+            <ul>
+                <li><img src="relogio.png" alt="Ícone Relógio"> Segunda a Sexta: 7:00 - 22:00</li>
+                <li><img src="relogio.png" alt="Ícone Relógio"> Sábado: 8:00 - 12:00</li>
+            </ul>
+        </div>
+
+        
+        <div class="profissionais">
+            <h3>Equipe de Profissionais</h3>
+            <div class="profissional">
+                <img src="negao.jpeg" alt="Marcelo Silva">
+                <p>Marcelo Silva</p>
+            </div>
+            <div class="profissional">
+                <img src="mulher1.jpeg" alt="Ana Andrade">
+                <p>Ana Andrade</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

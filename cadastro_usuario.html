@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login de Usuário</title>
+    <link rel="stylesheet" href="css1.css">
+    <style>
+        /* style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    font-family: Arial, sans-serif;
+}
+
+.login-container {
+    background-color: #111;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    color: #fff;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+}
+
+input::placeholder {
+    color: #888;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #FF0000; 
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold; 
+}
+
+.login-btn:hover {
+    background-color: #CC0000;
+}
+
+.forgot-password {
+    margin-top: 30px; /* Aumenta a distância entre o link "Esqueceu sua senha?" e o botão de login */
+    text-align: center;
+}
+
+.forgot-password p {
+    color: #fff;
+    font-size: 14px;
+}
+
+.forgot-password a {
+    color: red;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.register-btn, .company-btn {
+    padding: 10px;
+    width: 48%;
+    border: 1px solid #444;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.register-btn:hover, .company-btn:hover {
+    background-color: #222;
+}
+
+.social-login {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.social-login img {
+    width: 30px;
+    cursor: pointer;
+}
+
+.social-login img:hover {
+    opacity: 0.8;
+}
+
+/* Ajustes para telas maiores (desktop) */
+@media (min-width: 768px) {
+    .login-container {
+        width: 400px;
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+        margin-bottom: 25px;
+    }
+
+    .login-btn {
+        font-size: 1.1em;
+        padding: 12px;
+    }
+
+    .buttons {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .register-btn, .company-btn {
+        width: auto;
+        padding: 12px 20px;
+        font-size: 1em;
+    }
+
+    .social-login img {
+        width: 35px;
+    }
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 400px) {
+    .login-container {
+        width: 100%;
+        padding: 15px;
+        box-shadow: none;
+        border-radius: 0;
+    }
+    .buttons {
+        flex-direction: column;
+    }
+    .register-btn, .company-btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .forgot-password p {
+        font-size: 12px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Login de Usuário</h1>
+        <form>
+            <label for="username">Email ou Nome do Usuário</label>
+            <input type="text" id="username" placeholder="Digite seu E-mail ou Nome de Usuário" required>
+
+            <label for="password">Senha</label>
+            <input type="password" id="password" placeholder="Digite sua senha" required>
+
+            
+            <a href="tela_inical.html" class="login-btn">Entrar</a>
+
+            <div class="forgot-password">
+                <p>Esqueceu sua senha? <a href="senha.html">Redefinir senha</a></p>
+            </div>
+
+            <div class="buttons">
+                <a href="usuario.html" target="_blank" class="register-btn">Cadastrar</a>
+                <a href="empresa.html" target="_blank" class="company-btn">Empresa</a>
+            </div>
+            
+            <div class="social-login">
+                <a href="#"><img src="2991148.png" alt=""></a>
+                <a href="#"><img src="747.png" alt="Login com Apple"></a>
+                <a href="#"><img src="2023_Facebook_icon.svg.png" alt="Login com Facebook"></a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

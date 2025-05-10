@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fit Zone</title>
+    <link rel="stylesheet" href="fit.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.back-button {
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    margin-right: 20px;
+}
+
+h1 {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.schedule, .team {
+    width: 48%;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.schedule p, .team p {
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+}
+
+.schedule li, .team li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.schedule li img, .team li img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.schedule li span {
+    flex-grow: 1;
+}
+
+.team li img {
+    width: 60px;
+    height: 60px;
+}
+.profile-link {
+    color: inherit; 
+    text-decoration: none; 
+}
+
+.profile-link:hover {
+    text-decoration: underline;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Cabeçalho com botão de voltar -->
+        <div class="header">
+            <a href="tela_inical.html" class="back-button">&larr;</a>
+            <h1>Fit Zone</h1>
+        </div>
+
+        <!-- Imagem da academia -->
+        <div class="image-container">
+            <img src="Opera Instantâneo_2024-10-24_150751_www.figma.com.png" alt="Academia">
+        </div>
+
+        <!-- Horários das Aulas -->
+        <div class="schedule">
+            <h2>Horários das Aulas</h2>
+            <p>Confira os horários disponíveis</p>
+            <ul>
+                <li>
+                    <img src="relogio.png" alt="Ícone Musculação">
+                    <span>Musculação</span>
+                    <span>Seg a Sex - 18:00-19:00</span>
+                </li>
+                <li>
+                    <img src="relogio.png" alt="Ícone CrossFit">
+                    <span>Aula de CrossFit</span>
+                    <span>Seg e Qua - 18:00-19:00</span>
+                </li>
+                <li>
+                    <img src="relogio.png" alt="Ícone Zumba">
+                    <span>Zumba Fitness</span>
+                    <span>Ter e Qui - 19:30-20:30</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Equipe de Profissionais -->
+        <div class="team">
+            <h2>Equipe de Profissionais</h2>
+            <ul>
+                <li>
+                    <img src="home.png" alt="João Silva">
+                    <span>João Silva</span>
+                </li>
+                <li>
+                    <img src="mulher.png" alt="Maria Oliveira">
+                    <span>Maria Oliveira</span>
+                </li>
+                <li>
+                    <img src="7f3ef22b636b67fca6d90e4b4deddfb7.png" alt="Elton Figueiredo">
+                    <a href="info.html" class="profile-link"><span>Elton Figueiredo</span></a>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

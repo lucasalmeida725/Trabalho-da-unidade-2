@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #333;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #ff1a1a;
+            padding: 15px;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            color: #fff;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .back-button {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .back-button span {
+            font-size: 20px;
+            margin-right: 5px;
+        }
+
+        .section-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .schedule-item, .student-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-bottom: 1px solid #555;
+        }
+
+        .emoji {
+            font-size: 20px;
+            margin-right: 10px;
+        }
+
+        .student-item .emoji {
+            color: gold;
+        }
+
+        .schedule-info, .student-info {
+            flex-grow: 1;
+        }
+
+        .student-item span {
+            font-size: 14px;
+            color: #bbb;
+        }
+
+        .rating {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .stars {
+            color: gold;
+            font-size: 18px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Agenda</div>
+
+    <div class="container">
+        <a href="pagina_anterior.html" class="back-button">
+            <span>←</span> Voltar
+        </a>
+
+        <div class="section-title">Agendamentos de Horários</div>
+        <div class="schedule-item">
+            <span class="emoji">🕗</span>
+            <div class="schedule-info">
+                <div>08:00 - Aula de Jiu Jitsu</div>
+                <span>Professor: Mário Santos</span>
+            </div>
+            <div>12/10/2024</div>
+        </div>
+        <div class="schedule-item">
+            <span class="emoji">🕦</span>
+            <div class="schedule-info">
+                <div>11:30 - Aula de Muay Thai</div>
+                <span>Professor: Júlia Almeida</span>
+            </div>
+            <div>13/10/2024</div>
+        </div>
+
+        <div class="section-title">Alunos</div>
+        <div class="student-item">
+            <span class="emoji">👤</span>
+            <div class="student-info">
+                <div>Maria Silva</div>
+                <span>Aula de Muay Thai</span>
+            </div>
+            <div>12/10/2024</div>
+        </div>
+        <div class="student-item">
+            <span class="emoji">👤</span>
+            <div class="student-info">
+                <div>João Pereira</div>
+                <span>Aula de Muay Thai</span>
+            </div>
+            <div>12/10/2024</div>
+        </div>
+        <div class="student-item">
+            <span class="emoji">👤</span>
+            <div class="student-info">
+                <div>Beatriz Costa</div>
+                <span>Aula de Jiu Jitsu</span>
+            </div>
+            <div>13/10/2024</div>
+        </div>
+        <div class="student-item">
+            <span class="emoji">👤</span>
+            <div class="student-info">
+                <div>Ana Silva</div>
+                <span>Aula de Jiu Jitsu</span>
+            </div>
+            <div>13/10/2024</div>
+        </div>
+        <div class="student-item">
+            <span class="emoji">👤</span>
+            <div class="student-info">
+                <div>Sofia Ferreira</div>
+                <span>Aula de Jiu Jitsu</span>
+            </div>
+            <div>13/10/2024</div>
+        </div>
+        <div class="student-item">
+            <span class="emoji">👤</span>
+            <div class="student-info">
+                <div>Lucas Martins</div>
+                <span>Aula de Jiu Jitsu</span>
+            </div>
+            <div>13/10/2024</div>
+        </div>
+        <div class="student-item">
+            <span class="emoji">👤</span>
+            <div class="student-info">
+                <div>Pedro Almeida</div>
+                <span>Aula de Jiu Jitsu</span>
+            </div>
+            <div>12/10/2024</div>
+        </div>
+
+        <div class="section-title">Avaliações dos Alunos</div>
+        <div class="rating">
+            <span class="emoji">👤</span>
+            <div>
+                <div>Ana</div>
+                <div>Ótimo dojo, excelente estrutura!</div>
+            </div>
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+        </div>
+    </div>
+</body>
+</html>

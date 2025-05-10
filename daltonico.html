@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acessibilidade para Daltônicos</title>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 600px;
+      padding: 20px;
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      position: relative;
+    }
+
+    .back-arrow {
+      position: absolute;
+      left: 20px;
+      top: 20px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    h1 {
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+
+    .types {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .types button {
+      flex: 1;
+      padding: 10px;
+      border: 1px solid #fff;
+      background: none;
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .button-group {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    .button-group button {
+      padding: 15px;
+      background-color: #ff4444;
+      border: none;
+      color: #fff;
+      font-size: 18px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .test-selection {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .test-selection button {
+      flex: 1;
+      padding: 10px;
+      background-color: #ff4444;
+      border: none;
+      color: #fff;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .instruction {
+      font-size: 14px;
+      color: #aaa;
+    }
+
+    /* Responsividade para telas maiores */
+    @media (min-width: 768px) {
+      .container {
+        max-width: 700px;
+      }
+
+      .types button, .button-group button, .test-selection button {
+        font-size: 18px;
+      }
+
+      .instruction {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="configuracao.html" class="back-arrow">← Voltar</a>
+    <h1>Acessibilidade para Daltônicos</h1>
+    
+    <div class="types">
+      <button>Protanopia</button>
+      <button>Deuteranopia</button>
+    </div>
+
+    <div class="button-group">
+      <button>Teste de Contraste</button>
+      <button>Simulador de Cores</button>
+      <button>Checklist de Acessibilidade</button>
+    </div>
+
+    <div>
+      <p>Selecione o Tipo de Teste</p>
+      <div class="test-selection">
+        <button>Teste de Contraste</button>
+        <button>Teste de Cores</button>
+      </div>
+      <p class="instruction">Escolha o teste adequado para definir a acessibilidade do seu design</p>
+    </div>
+  </div>
+</body>
+</html>
